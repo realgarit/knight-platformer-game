@@ -11,6 +11,7 @@ This project is a classic 2D platformer developed using the [Godot Engine](https
 - [Assets and Credits](#assets-and-credits)
 - [Getting Started](#-getting-started)
 
+---
 
 ## ⚠️ Under Development
 
