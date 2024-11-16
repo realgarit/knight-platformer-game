@@ -4,6 +4,14 @@ This project is a classic 2D platformer developed using the [Godot Engine](https
 
 ---
 
+## Table of Contents
+
+- [⚠️ Under Development](#-under-development)
+- [Features](#features)
+- [Assets and Credits](#assets-and-credits)
+- [Getting Started](#-getting-started)
+
+
 ## ⚠️ Under Development
 
 > **Note**: This game is currently **under development** and is **not yet finished or compiled**.
@@ -28,7 +36,7 @@ While these assets are released under the Creative Commons Zero (CC0) license, w
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 To try out or modify the game locally:
 
