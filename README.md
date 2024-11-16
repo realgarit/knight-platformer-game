@@ -32,8 +32,8 @@ This project is a classic 2D platformer developed using the [Godot Engine](https
 
 ## Assets and Credits
 
-The game utilizes assets from the [Brackeys' Platformer Bundle](https://brackeysgames.itch.io/brackeys-platformer-bundle).  
-While these assets are released under the Creative Commons Zero (CC0) license, we would like to extend our gratitude to the creators for their excellent work.
+The game utilizes assets from the [Brackeys' Platformer Bundle](https://brackeysgames.itch.io/brackeys-platformer-bundle).
+While these assets are released under the Creative Commons Zero (CC0) license, I would like to extend my gratitude to the creators for their excellent work.
 
 ---
 
