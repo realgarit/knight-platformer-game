@@ -1,0 +1,76 @@
+[gd_scene load_steps=12 format=3 uid="uid://cvdra534vndh2"]
+
+[ext_resource type="Script" path="res://scripts/mushroom.gd" id="1_ncbl8"]
+[ext_resource type="Texture2D" uid="uid://cysnr7utvwjoc" path="res://assets/sprites/mushroom_animation.png" id="2_s8yr6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t5pii"]
+atlas = ExtResource("2_s8yr6")
+region = Rect2(1, 0, 18, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2486i"]
+atlas = ExtResource("2_s8yr6")
+region = Rect2(19, 0, 18, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pfi8o"]
+atlas = ExtResource("2_s8yr6")
+region = Rect2(37, 0, 18, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p6lnr"]
+atlas = ExtResource("2_s8yr6")
+region = Rect2(55, 0, 18, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x4t26"]
+atlas = ExtResource("2_s8yr6")
+region = Rect2(73, 0, 18, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mx5lq"]
+atlas = ExtResource("2_s8yr6")
+region = Rect2(91, 0, 18, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xtbk1"]
+atlas = ExtResource("2_s8yr6")
+region = Rect2(109, 0, 18, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pf7c2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t5pii")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2486i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pfi8o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p6lnr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x4t26")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mx5lq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xtbk1")
+}],
+"loop": false,
+"name": &"squish",
+"speed": 8.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8gabu"]
+size = Vector2(16, 16)
+
+[node name="Mushroom" type="Area2D" groups=["mushrooms"]]
+script = ExtResource("1_ncbl8")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_pf7c2")
+animation = &"squish"
+frame = 6
+frame_progress = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_8gabu")
